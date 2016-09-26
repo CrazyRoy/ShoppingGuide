@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LYCategoryCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="163" height="100"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uR-bm-LaL" userLabel="PlaceHolderBtn">
+                        <rect key="frame" x="66" y="37" width="31" height="26"/>
+                        <state key="normal" image="PlaceHolderImage_small_31x26_"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g8G-kR-8xr" userLabel="imageView">
+                        <rect key="frame" x="0.0" y="0.0" width="163" height="100"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="6uR-bm-LaL" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="HEA-eh-QWm"/>
+                <constraint firstItem="g8G-kR-8xr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IVg-LM-gT1"/>
+                <constraint firstItem="6uR-bm-LaL" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="NYP-mO-ocG"/>
+                <constraint firstAttribute="trailing" secondItem="g8G-kR-8xr" secondAttribute="trailing" id="RYr-rd-ePX"/>
+                <constraint firstItem="g8G-kR-8xr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hL2-es-n2W"/>
+                <constraint firstAttribute="bottom" secondItem="g8G-kR-8xr" secondAttribute="bottom" id="myN-2L-JXb"/>
+            </constraints>
+            <size key="customSize" width="163" height="100"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imageView" destination="g8G-kR-8xr" id="06S-oB-3Uu"/>
+                <outlet property="placeholderBtn" destination="6uR-bm-LaL" id="8xV-Kk-fCF"/>
+            </connections>
+            <point key="canvasLocation" x="403.5" y="232"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="PlaceHolderImage_small_31x26_" width="31" height="26"/>
+    </resources>
+</document>

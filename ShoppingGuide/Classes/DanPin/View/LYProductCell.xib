@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LYProductCell">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="268"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="268"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5Y-7U-R0q">
+                        <rect key="frame" x="78.5" y="121" width="31" height="26"/>
+                        <state key="normal" image="PlaceHolderImage_small_31x26_"/>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s9l-A0-yRP">
+                        <rect key="frame" x="0.0" y="0.0" width="188" height="164"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="164" id="6fh-5X-Fd3"/>
+                            <constraint firstAttribute="height" constant="164" id="ghQ-so-DC1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEv-IH-PUV">
+                        <rect key="frame" x="5" y="176" width="183" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmg-CL-iIg">
+                        <rect key="frame" x="5" y="238" width="37.5" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.90980392160000001" green="0.3294117647" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mnc-VS-vP3">
+                        <rect key="frame" x="157" y="238" width="22" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Nth-LJ-7yr"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="RPf-oi-B2j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="0" image="Search_GiftBtn_Default_12x10_">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="s9l-A0-yRP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2YQ-XP-Ziw"/>
+                <constraint firstAttribute="trailing" secondItem="Mnc-VS-vP3" secondAttribute="trailing" constant="9" id="5Ib-DM-16k"/>
+                <constraint firstItem="cEv-IH-PUV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="7tQ-la-TTk"/>
+                <constraint firstItem="Kmg-CL-iIg" firstAttribute="leading" secondItem="cEv-IH-PUV" secondAttribute="leading" id="Jg0-4T-Wp1"/>
+                <constraint firstItem="cEv-IH-PUV" firstAttribute="top" secondItem="s9l-A0-yRP" secondAttribute="bottom" constant="12" id="Mey-DF-jH0"/>
+                <constraint firstAttribute="bottom" secondItem="Kmg-CL-iIg" secondAttribute="bottom" constant="5" id="RWy-Db-J4N"/>
+                <constraint firstAttribute="trailing" secondItem="cEv-IH-PUV" secondAttribute="trailing" id="RtW-wH-gG4"/>
+                <constraint firstItem="S5Y-7U-R0q" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="d6V-kb-TtE"/>
+                <constraint firstItem="Mnc-VS-vP3" firstAttribute="height" secondItem="Kmg-CL-iIg" secondAttribute="height" id="e3S-Ak-Z80"/>
+                <constraint firstItem="S5Y-7U-R0q" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="gad-g0-YKD"/>
+                <constraint firstItem="s9l-A0-yRP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ryv-OS-MFn"/>
+                <constraint firstItem="Mnc-VS-vP3" firstAttribute="centerY" secondItem="Kmg-CL-iIg" secondAttribute="centerY" id="shN-SD-W3L"/>
+                <constraint firstAttribute="trailing" secondItem="s9l-A0-yRP" secondAttribute="trailing" id="tdD-Bf-2vn"/>
+            </constraints>
+            <size key="customSize" width="188" height="268"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="likeBtn" destination="Mnc-VS-vP3" id="EWx-1I-uN2"/>
+                <outlet property="placeholderBtn" destination="S5Y-7U-R0q" id="tup-UH-Q3F"/>
+                <outlet property="priceLabel" destination="Kmg-CL-iIg" id="fbh-BS-7xa"/>
+                <outlet property="productImage" destination="s9l-A0-yRP" id="6Ef-4j-TTP"/>
+                <outlet property="titleLabel" destination="cEv-IH-PUV" id="Sem-fg-VGK"/>
+            </connections>
+            <point key="canvasLocation" x="256" y="253"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="PlaceHolderImage_small_31x26_" width="31" height="26"/>
+        <image name="Search_GiftBtn_Default_12x10_" width="12" height="10"/>
+    </resources>
+</document>
